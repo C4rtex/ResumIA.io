@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{2022DE36-6C53-4366-A55B-BB3E86B5FAFE}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/c4rtex/Chrome Extension Project/ApiGPT/ApiGPT/Services/GPTService.cs" relfile="ApiGPT/Services/GPTService.cs" line="22" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ApiGPT PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiGPT/Services/GPTService.cs">
+    <Files>
+      <File FileName="ApiGPT/Controllers/GPTController.cs" />
+      <File FileName="ApiGPT/Program.cs" />
+      <File FileName="ApiGPT/Controllers/WeatherForecastController.cs" />
+      <File FileName="ApiGPT/appsettings.json" />
+      <File FileName="ApiGPT/Services/IGPTService.cs" />
+      <File FileName="ApiGPT/Services/GPTService.cs" Line="23" Column="35" />
+      <File FileName="ApiGPT/Modelos/Language.cs" />
+      <File FileName="ApiGPT/Modelos/CallGPTViewModel.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ApiGPT" expanded="True">
+            <Node name="ApiGPT" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Modelos" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="GPTService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "ResumIA.io",
+    "version": "1.0",
+    "description": "Una extensión simple para obtener el resumen de la página",
+    "permissions": ["activeTab", "storage", "tabs"],
+    "action": {
+      "default_icon": {
+        "16": "images/logo.jpg",
+        "32": "images/logo.jpg",
+        "48": "images/logo.jpg",
+        "128": "images/logo.jpg"
+      },
+      "default_title": "Obtener resumen",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "images/logo.jpg",
+      "32": "images/logo.jpg",
+      "48": "images/logo.jpg",
+      "128": "images/logo.jpg"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

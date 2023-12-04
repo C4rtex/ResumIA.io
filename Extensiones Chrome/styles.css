@@ -1,0 +1,101 @@
+html{
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 5px;
+    height: 450px;
+    padding: 5%;
+}
+div{
+    margin-bottom: 10px;
+}
+img{
+    border-radius: 50%;
+}
+
+.color-text{
+    color: white;
+}
+
+.loader{
+    display:none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+}
+
+.loader::before,
+.loader::after{
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+
+}
+
+.loader::before{
+width: 100%;
+height: 100%;
+background-image: linear-gradient(0deg, #f0c 0%, #80f 100%);
+}
+
+.loader::after{
+    width: 85%;
+    height: 85%;
+    background-color: rgb(35, 38, 38);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.copied{
+    animation: tilt-shaking 0.25s linear infinite;
+}
+
+#tooltip{
+    position: relative;
+}
+
+#tooltipText{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    background-color: #000;
+    white-space: nowrap;
+    padding: 5px 7px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#tooltipText::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -80%;
+    transform:translateX(-50%);
+    border: 15px solid;
+    border-color: #0000 #0000 #000 #0000;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+@keyframes spin{
+    to {
+        transform: rotate(360deg);
+    }
+}
